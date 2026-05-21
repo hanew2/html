@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>semantic tag</title>
+<style>
+  header {border: 2px solid gray;}
+  header h1 {text-align: center;}
+
+  nav ul {text-align: center;}
+  nav li {display: inline; margin: 0 10px;}
+
+  #container {width: 1100px; margin: auto; overflow: hidden;}
+
+  main {border: 1px solid gray; width: 860px; float: left;}
+  aside {border: 1px solid gray; width: 200px; float: right;}
+  footer {border: 5px solid gray; text-align: center; padding: 20px; margin-top: 50px;}
+  aside ul {padding: 5px; list-style: none; font-size: 14;} 
+
+  figure {margin: 0;}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Layout</h1>
+    </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">MENU1</a></li>
+      <li><a href="#">MENU2</a></li>
+      <li><a href="#">MENU3</a></li>
+      <li><a href="#">MENU4</a></li>
+      <li><a href="#">MENU5</a></li>
+      <li><a href="#">MENU6</a></li>
+    </ul>
+  </nav>
+
+  <div id="container">
+    <main>
+      <section>
+        <article>
+          <h3>article1</h3>
+          <p>Fusce aliquet, arcu in aliquet commodo, ante mauris fringilla elit, at tincidunt libero augue ac tortor. Praesent sollicitudin ipsum aliquam nisi viverra, id pellentesque felis scelerisque. Suspendisse orci turpis, iaculis ut lacus quis, rhoncus egestas lectus. Vivamus nec viverra odio. Aenean dapibus, velit eget tempor aliquet, neque velit tincidunt sem, vitae elementum nisl felis id nisl. Integer vestibulum eleifend diam, vel aliquet velit vehicula auctor. Integer porta volutpat sem, ut tristique lorem tincidunt vel. Proin maximus sagittis sem quis volutpat. Aliquam in lacinia nisi. Nam finibus gravida justo eget faucibus. Cras efficitur nisl ac sem tincidunt ornare. Pellentesque dapibus mi ac lectus iaculis feugiat. Nunc interdum suscipit lorem, et tempor urna pellentesque ut.</p>
+        </article>
+        <article>
+          <h3>article2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis consequat erat, sed eleifend risus. Phasellus sit amet auctor nisl, ut porttitor lectus. Donec bibendum enim eu ante euismod viverra. Vestibulum tempor erat sed est fermentum, vitae ornare odio sodales. Morbi blandit quam ut odio placerat, eu tempus est rhoncus. Praesent quis eleifend magna. In hac habitasse platea dictumst. Duis quis lacinia libero. Integer blandit aliquam scelerisque. Ut bibendum urna ac diam ullamcorper, vehicula iaculis dui vulputate. Ut non magna a tellus faucibus pharetra.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+        <figure>
+          <img src="https://picsum.photos/160" alt="">
+          <img src="https://picsum.photos/id/237/160" alt="">
+          <img src="https://picsum.photos/seed/picsum/160" alt="">
+          <img src="https://picsum.photos/160?random=1" alt="">
+          <img src="https://picsum.photos/160?random=2" alt="">
+        </figure>
+
+    <aside>
+      <form>
+        <input type="id" placeholder="아이디"><br>
+        <input type="password" placeholder="비밀번호">
+      </form>
+
+    <section>
+      <h4>notice</h4>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor sit amet</li>
+      </ul>
+    </section>
+
+      <img src="https://dummyimage.com/300x400/808080/fff&text=Banner" alt="">
+    </aside>
+
+  <footer>
+    <address>Copyright &copy;NOWON SBS.com</address>
+    <p>웹페이지 구조연습</p>
+  </footer>
+
+</body>
+</html>

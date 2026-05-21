@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video</title>
+</head>
+<body>
+  <h2>video</h2>
+  <!-- 예전 방식.
+  <embed src="multimedia/Wildlife.mp4" width="800" height="400"> -->
+
+  <!-- 요즘 방식. 
+  *autoplay 작동을 위해서는 꼭 muted와 동시에 사용해야 함.
+  *playsinline : ios(아이폰) 사용시 전체화면 처리 되는 것을 막아줌.-->
+  
+  
+  <video src="multimedia/Wildlife.mp4" controls autoplay muted playsinline></video>
+  
+  <video controls width="600" poster="multimedia/capture.jpg">
+    <source src="multimedia/Wildlife.webm" type="video/wepm">
+    <source src="multimedia/Wildlife.mp4" type="video/mp4">
+    이 브라우저는 동영상이 작동되지 않습니다.
+  </video>
+
+  </body>
+</html>

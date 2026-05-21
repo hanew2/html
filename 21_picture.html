@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>picture</title>
+</head>
+<body>
+  <h1>picture tag의 사용</h1>
+
+  <!-- img태그를 꼭 같이 써줘야 사진이 나옴. -->
+  <picture>
+    <!-- 화면 너비가 1200이상일 때 01번이 보이고 1200이하면 02번 사진이 보임. 웹페이지를 줄이고 키울 때 반응형으로 반응. -->
+    <source srcset="multimedia/morning_feature_pc_bg.jpg" media="(min-width:1200px)">
+    <!-- 600이하 // -->
+    <source srcset="multimedia/morning_feature_mo_bg.jpg" media="(max-width:600px)"> 
+    <img src="img/29cm.png" alt="">  
+    <!-- 조건에 벗어났을 땐 위에 29cm로고가 뜨게 한 것. 조건이 하나가 아니라 두개일때 중간단계 느낌. 조건이 하나면 그냥 그 조건이랑 똑같이 맞추면 되나?-->
+  </picture>
+
+</body>
+</html>
